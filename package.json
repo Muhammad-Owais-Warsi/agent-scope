@@ -1,6 +1,6 @@
 {
   "name": "agents-scope",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A security layer that ensures agents can only use the tools they're explicitly allowed to access.",
   "type": "module",
   "license": "MIT",
