@@ -1,7 +1,7 @@
 {
-  "name": "agent-scope",
+  "name": "agents-scope",
   "version": "0.1.0",
-  "description": "Framework-agnostic tool authorization for AI agents.",
+  "description": "A security layer that ensures agents can only use the tools they're explicitly allowed to access.",
   "type": "module",
   "license": "MIT",
   "repository": {
