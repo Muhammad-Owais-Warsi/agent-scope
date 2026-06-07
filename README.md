@@ -5,13 +5,13 @@ A security layer that ensures agents can only use the tools they're explicitly a
 ## Install
 
 ```bash
-bun add agent-scope
+bun add agents-scope
 ```
 
 ## Usage
 
 ```ts
-import { createAgentScope } from "agent-scope";
+import { createAgentScope } from "agents-scope";
 
 const scope = createAgentScope({
   agents: [
