@@ -1,19 +1,39 @@
 {
   "name": "agent-scope",
   "version": "0.1.0",
+  "description": "Framework-agnostic tool authorization for AI agents.",
   "type": "module",
-  "module": "./index.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhammad-Owais-Warsi/agent-scope.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Muhammad-Owais-Warsi/agent-scope/issues"
+  },
+  "homepage": "https://github.com/Muhammad-Owais-Warsi/agent-scope#readme",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
   "files": [
-    "index.ts",
-    "core.ts",
+    "dist",
     "README.md"
   ],
   "scripts": {
-    "build": "bun build ./index.ts --outdir ./dist --format esm --target node",
+    "clean": "rm -rf dist",
+    "build:js": "bun build ./index.ts --outfile ./dist/index.js --format esm --target node",
+    "build:types": "bunx tsc -p tsconfig.build.json",
+    "build": "bun run clean && bun run build:js && bun run build:types",
     "typecheck": "bunx tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@types/bun": "latest"

@@ -21,7 +21,7 @@ const scope = createAgentScope({
 });
 
 // pass the tool and tool_id
-const secureTool = scope.agent("admin").secureTool(tool, "read_doc");
+const secureTool = scope.agent("researcher").secureTool(tool, "read_doc");
 ```
 
-`secureTool` supports tools that execute via `invoke`, `func`, `execute`, or `_call`.
+**Any attempt by the research agent to execute `admin_delete_user` will be blocked.**
