@@ -1,3 +1,19 @@
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://peerlist.io/api/v1/projects/embed/PRJH8OERPAK7RDE8G17LNQLGE69MM6?showUpvote=false&theme=dark"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://peerlist.io/api/v1/projects/embed/PRJH8OERPAK7RDE8G17LNQLGE69MM6?showUpvote=false&theme=light"
+  />
+  <img
+    alt="Agent Scope"
+    src="https://peerlist.io/api/v1/projects/embed/PRJH8OERPAK7RDE8G17LNQLGE69MM6?showUpvote=false&theme=light"
+    height="72"
+  />
+</picture>
+      
 # agent-scope
 
 A security layer that ensures agents can only use the tools they're explicitly allowed to access.
